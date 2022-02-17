@@ -1,0 +1,13 @@
+code --install-extension cssho.vscode-svgviewer
+code --install-extension donjayamanne.githistory
+code --install-extension Equinusocio.vsc-community-material-theme
+code --install-extension equinusocio.vsc-material-theme-icons
+code --install-extension formulahendry.code-runner
+code --install-extension jeff-hykin.better-cpp-syntax
+code --install-extension ms-python.python
+code --install-extension ms-python.vscode-pylance
+code --install-extension ms-vscode.atom-keybindings
+code --install-extension ms-vscode.cpptools
+code --install-extension ms-vscode.cpptools-themes
+code --install-extension PKief.material-product-icons
+code --install-extension shd101wyy.markdown-preview-enhanced
