@@ -48,7 +48,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
@@ -114,7 +114,13 @@ alias batteryconfig="kate /etc/systemd/system/battery-charge-threshold.service &
 alias batteryreset="sudo systemctl enable battery-charge-threshold.service && sudo systemctl start battery-charge-threshold.service"
 alias stopbattery="sudo systemctl stop battery-charge-threshold.service"
 alias adspotify="LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify"
-hash -d codingdir="/media/phoenixflame101/Games/Coding"
+alias cd='cd -P'
+
+# Disables colour coding for o+w directories
+export LS_COLORS="$LS_COLORS:ow=1;34;100:"
+
+export SPICETIFY_INSTALL="/home/phoenixflame101/.spicetify"
+export PATH="$SPICETIFY_INSTALL:$PATH"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # CPP build aliases using /usr/local/bin/runcpp.py
@@ -153,3 +159,4 @@ foo() {
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+export PATH="$PATH:$HOME/.spicetify"
